@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package image;
+
+service ImageProcessingService {
+  rpc ProcessImage (ImageRequest) returns (ImageResponse);
+}
+
+message ImageRequest {
+  string token = 1;
+  bytes image_data = 2;
+}
+
+message ImageResponse {
+  string license_plate_number = 1;
+  float license_plate_number_score = 2;
+  string license_plate_country = 3;
+  float license_plate_country_score = 4;
+}

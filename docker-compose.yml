@@ -1,0 +1,18 @@
+services:
+  plate_rec:
+    restart: unless-stopped
+    build: .
+    container_name: plate_rec
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    volumes:
+      - .:/project
+    environment:
+      - TZ=Asia/Bishkek
+    deploy:  
+      resources:
+        reservations:      
+          devices:
+            - driver: nvidia          
+              count: all
+              capabilities: [ gpu ]

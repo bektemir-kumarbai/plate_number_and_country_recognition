@@ -1,0 +1,41 @@
+torch>=1.12
+basicsr==1.4.2
+pytorch_lightning==1.8.6
+ultralytics>=8.3.12
+craft_text_detector @ git+https://github.com/ria-com/craft-text-detector.git
+PyTurboJPEG @ git+https://github.com/lilohuang/PyTurboJPEG.git
+modelhub_client @ git+https://github.com/ria-com/modelhub-client.git
+cython
+fastai
+grpcio-tools
+psycopg2-binary
+pydantic
+pydantic-settings
+setuptools
+paddlepaddle
+python-multipart
+python-decouple
+paddleocr
+asyncpg
+realesrgan
+aiofiles
+numpy
+opencv_python
+scikit_image
+asyncio
+gitpython
+pycocotools
+ujson
+pillow
+tqdm
+matplotlib
+scipy
+PyYAML>=5.4
+seaborn
+ipywidgets
+gevent
+termcolor
+scikit-learn
+albumentations
+torchvision>=0.13.1
+
